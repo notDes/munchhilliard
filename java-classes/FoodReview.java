@@ -19,6 +19,7 @@ public class FoodReview
     private int numDislikes; // similar to Like button, but says "Dislike"
     private int numOfHearts;
     private int numSadLikes; // similar to Like button, but says "Sad"
+    private int numOfHappyLikes // similar to like button, but says "Happy"
   
 
     /**
@@ -38,6 +39,7 @@ public class FoodReview
         numUsefulLikes = 0;
         numOfHearts = 0;
         numSadLikes = 0; // defaults to 0
+        this.numOfHappyLikes = 0;
 
         // set instance var values using parameters
         // TO DO
@@ -52,6 +54,14 @@ public class FoodReview
     public int getNumUsefulLikes()
     {
       return numUsefulLikes;
+    }
+  /**
+      returns the number of happy likes on the review.
+      @return numOfHappyLikes which is how many Happy likes are on the review.
+    */
+    public int getnumOfHappyLikes()
+    {
+      return numOfHappyLikes;
     }
     /**
       sets the number of useful likes on the review
