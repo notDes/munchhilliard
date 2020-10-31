@@ -16,6 +16,7 @@ public class User
     private String userName;
     private String name;
     private String birthday;
+    private String accountCreationDay;
     // add more
 
     /**
@@ -31,6 +32,7 @@ public class User
         totalLikes = 0;
         this.recentLoginDay = "";
         userAge = 0;
+        this.accountCreationDay = "";
 
     }
 
@@ -150,6 +152,26 @@ public class User
     {
       return recentLoginDay;
     }
+      /**
+      getAccountCreationDay()
+      Accesses the account creation day of the user.
+      @return the day when the account was created.
+    */
+    public String getAccountCreationDay()
+    {
+      return accountCreationDay;
+    }
+  
+    /**
+      setAccountCreationDay()
+      Sets the day the account was created of the user.
+      @param _accountCreationDay day of account creation.
+    */
+    public void setAccountCreationDay(String _accountCreationDay){
+      this.accountCreationDay = _accountCreationDay;
+    }
+  
+  
   
     /**
       setRecentLoginDay()
